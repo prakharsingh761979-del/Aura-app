@@ -11,6 +11,29 @@ class AuraApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+  debugShowCheckedModeBanner: false,
+  title: 'AURA',
+  theme: ThemeData(
+    primaryColor: Colors.black,
+    scaffoldBackgroundColor: Colors.white,
+    appBarTheme: const AppBarTheme(
+      backgroundColor: Colors.black,
+      foregroundColor: Colors.white,
+      centerTitle: true,
+    ),
+    elevatedButtonTheme: ElevatedButtonThemeData(
+      style: ElevatedButton.styleFrom(
+        backgroundColor: Colors.black,
+        foregroundColor: Colors.white,
+        padding: EdgeInsets.symmetric(horizontal: 24, vertical: 14),
+        shape: RoundedRectangleBorder(
+          borderRadius: BorderRadius.circular(12),
+        ),
+      ),
+    ),
+  ),
+  home: const HomeScreen(),
+);
       title: 'AURA',
       debugShowCheckedModeBanner: false,
       home: const HomeScreen(),
