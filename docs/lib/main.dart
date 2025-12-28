@@ -40,29 +40,45 @@ class AuraApp extends StatelessWidget {
     );
   }
 }
-
 class HomeScreen extends StatelessWidget {
   const HomeScreen({super.key});
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.white,
-      appBar: AppBar(
-        title: const Text('AURA'),
-        centerTitle: true,
-      ),
       body: Center(
-        child: ElevatedButton(
-          onPressed: () {
-  Navigator.push(
-    context,
-    MaterialPageRoute(
-      builder: (context) => const CameraScreen(),
-    ),
-  );
-},
-          child: const Text('Analyze My Look'),
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: [
+            Text(
+              'AURA',
+              style: TextStyle(
+                fontSize: 42,
+                fontWeight: FontWeight.bold,
+                letterSpacing: 2,
+              ),
+            ),
+            SizedBox(height: 10),
+            Text(
+              'Your Face. Your Style.',
+              style: TextStyle(
+                fontSize: 16,
+                color: Colors.grey,
+              ),
+            ),
+            SizedBox(height: 40),
+            ElevatedButton(
+              onPressed: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                    builder: (context) => const CameraScreen(),
+                  ),
+                );
+              },
+              child: Text('Analyze My Look'),
+            ),
+          ],
         ),
       ),
     );
