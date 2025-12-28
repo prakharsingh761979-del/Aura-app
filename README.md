@@ -1,4 +1,4 @@
-# AURA 👤✨
+# AURA 👱🏻✨
 
 AURA is an AI-powered grooming and styling advisor for men.
 It analyzes face shape and skin tone to suggest:
