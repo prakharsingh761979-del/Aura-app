@@ -1,22 +1,27 @@
 # AURA 👤✨
 
-AURA is an AI-powered personal styling app that analyzes your face and suggests
-the best hairstyle, dressing style, and colors for you.
+AURA is an AI-powered personal styling app for **all ages**.  
+It analyzes your face and gives suggestions for the best hairstyle, dressing style, and colors that suit you.
 
 ## Features
-- Face-based hairstyle suggestions
-- Dressing and color recommendations
-- Simple, clean UI
-- Built with Flutter
+- Personalized hairstyle suggestions
+- Dressing style recommendations
+- Color matching advice
+- Clean and easy-to-use interface
+- Premium features (unlock advanced styles)
+- Ad-supported for free users
+
+## Screens
+- **Home Screen:** App name, tagline, and “Get My Style” button
+- **Camera Screen:** Camera icon and “Continue” button
+- **Result Screen:** Suggested hairstyle, dress, colors, and “Unlock Premium” button
 
 ## Tech Stack
 - Flutter (Dart)
 - Material UI
-- Future: Firebase, AI ML models
+- Future: Firebase for storage and analytics
 
-## Status
-🚧 MVP in development
-
-## Vision
-To help anyone who wants to look confident and stylish.
-using AI-powered styling.
+## Setup Instructions
+1. Clone this repo:  
+   ```bash
+   git clone <your-repo-link>
