@@ -46,6 +46,10 @@ class HomeScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+  appBar: AppBar(
+    title: const Text('AURA'),
+  ),
+  body: Center(
       body: Center(
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
