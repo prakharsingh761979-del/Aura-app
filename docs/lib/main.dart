@@ -1,3 +1,4 @@
+import 'camera_screen.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -30,7 +31,14 @@ class HomeScreen extends StatelessWidget {
       ),
       body: Center(
         child: ElevatedButton(
-          onPressed: () {},
+          onPressed: () {
+  Navigator.push(
+    context,
+    MaterialPageRoute(
+      builder: (context) => const CameraScreen(),
+    ),
+  );
+},
           child: const Text('Analyze My Look'),
         ),
       ),
