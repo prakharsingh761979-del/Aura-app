@@ -1,5 +1,5 @@
-import 'result_screen.dart';
 import 'package:flutter/material.dart';
+import 'result_screen.dart';
 
 class CameraScreen extends StatelessWidget {
   const CameraScreen({super.key});
@@ -8,34 +8,28 @@ class CameraScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('Capture Your Face'),
-        centerTitle: true,
+        title: const Text('Capture Face'),
       ),
       body: Center(
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
-            const Icon(
+            Icon(
               Icons.camera_alt,
               size: 100,
               color: Colors.grey,
             ),
-            const SizedBox(height: 20),
-            const Text(
-              'Camera will open here',
-              style: TextStyle(fontSize: 16),
-            ),
             const SizedBox(height: 30),
             ElevatedButton(
               onPressed: () {
-  Navigator.push(
-    context,
-    MaterialPageRoute(builder: (context) => const ResultScreen()),
-  );
-},
-                // Camera logic will be added later
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                    builder: (context) => const ResultScreen(),
+                  ),
+                );
               },
-              child: const Text('Open Camera'),
+              child: const Text('Continue'),
             ),
           ],
         ),
