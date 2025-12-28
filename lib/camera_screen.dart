@@ -1,3 +1,4 @@
+import 'result_screen.dart';
 import 'package:flutter/material.dart';
 
 class CameraScreen extends StatelessWidget {
@@ -27,6 +28,11 @@ class CameraScreen extends StatelessWidget {
             const SizedBox(height: 30),
             ElevatedButton(
               onPressed: () {
+  Navigator.push(
+    context,
+    MaterialPageRoute(builder: (context) => const ResultScreen()),
+  );
+},
                 // Camera logic will be added later
               },
               child: const Text('Open Camera'),
