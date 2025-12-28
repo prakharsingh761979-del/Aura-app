@@ -80,7 +80,7 @@ class HomeScreen extends StatelessWidget {
                   ),
                 );
               },
-              child: Text('Analyze My Look'),
+              child: Text('Get My Style'),
             ),
           ],
         ),
