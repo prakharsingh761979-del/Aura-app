@@ -53,6 +53,12 @@ class ResultScreen extends StatelessWidget {
             ),
             Text(result['color']!),
 
+            ElevatedButton(
+  onPressed: () {
+    // Premium logic later
+  },
+  child: Text('Unlock Premium (₹99/month)'),
+),
             const Spacer(),
             Center(
               child: Text(
